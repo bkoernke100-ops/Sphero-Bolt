@@ -18,3 +18,37 @@ async def startProgram():
         await Sound.Game.Coin.play(True)
         await roll((get_heading() + 90), 60, 1)
         await delay(1)
+
+registerMatrixAnimation({
+
+    frames: [
+
+        [
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0],
+
+            [0, 0, 0, 0, 0, 0, 0, 0]
+
+        ]
+
+    ],
+
+    palette: [{ r: 255, g: 255, b: 255 }],
+
+    fps: 10,
+
+    transition: MatrixAnimationTransition.None
+
+});

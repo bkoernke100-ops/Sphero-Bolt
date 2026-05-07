@@ -17,4 +17,4 @@ async def startProgram():
         set_main_led(get_random_color())
         await Sound.Game.Coin.play(True)
         await roll((get_heading() + 90), 60, 1)
-        await delay(1)s
+        await delay(1)

@@ -19,36 +19,40 @@ async def startProgram():
         await roll((get_heading() + 90), 60, 1)
         await delay(1)
 
-registerMatrixAnimation({
+register_matrix_animation(
 
-    frames: [
+    {
 
-        [
+        'frames': [
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+            [
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-            [0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-            [0, 0, 0, 0, 0, 0, 0, 0]
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-        ]
+                [0, 0, 0, 0, 0, 0, 0, 0],
 
-    ],
+            ]
 
-    palette: [{ r: 255, g: 255, b: 255 }],
+        ],
 
-    fps: 10,
+        'palette': [{ 'r': 255, 'g': 255, 'b': 255 }],
 
-    transition: MatrixAnimationTransition.None
+        'fps': 10,
 
-});
+        'transition': MatrixAnimationTransition.NONE,
+
+    }
+
+)
